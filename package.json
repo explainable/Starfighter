@@ -1,0 +1,22 @@
+{
+  "name": "explainable-starfighter",
+  "version": "1.0.0",
+  "description": "Front-end webserver",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/explainable/Starfighter.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/explainable/Starfighter/issues"
+  },
+  "homepage": "https://github.com/explainable/Starfighter#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
