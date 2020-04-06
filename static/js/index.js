@@ -7,11 +7,8 @@ $(document).ready(function() {
     $("#image-upload").submit(function(e) {
         e.preventDefault();
         
-        console.error("The following URL should be changed to API endpoint: ")
-        let URL = "/mlmodel?model=" + currentImageModel
-        console.error(URL)
-        return
-        
+        let URL = "http://api.explainable.xyz:5000/mlmodel?model=" + currentClassificationModel
+
         var file_data = $('#image-file').prop('files')[0];
         if (!file_data) {
             alert("You must select an image first.")
@@ -343,10 +340,7 @@ function plot_decision_tree(shouldQuery) {
 
         let values = [pclass, sex, age, spouses, children, fare] // same order as csv
 
-        console.error("The following URL should be changed to API endpoint: ")
-        let URL = "/mlmodel?model=" + currentClassificationModel
-        console.error(URL)
-        return
+        let URL = "http://api.explainable.xyz:5000/mlmodel?model=" + currentClassificationModel
 
         var http = new XMLHttpRequest()
         http.open("POST", URL, true)
