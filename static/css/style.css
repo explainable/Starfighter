@@ -301,6 +301,27 @@ body {
 
 }
 
+.about-us {
+	color: #00A99D;
+	text-align: center;
+	padding-top: 200px;
+}
+
+.about-curtain {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.about-gal {
+	width: 10%;
+	height: auto;
+	position: absolute;
+	z-index: 2;
+	left: 35%;
+	top: 60%;
+}
+
 .divider-custom {
   margin: 1.25rem 0 1.5rem;
   width: 100%;
