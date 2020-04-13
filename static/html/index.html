@@ -43,26 +43,18 @@
 	  </div>
 	</nav>
 
-
-	<header class="header hero masthead bg-primary-gradient text-center m-0 p-0">
-		<div class="masthead-content">
-			<div id="logo-title-box" class="animated">
-			<a class="navbar-brand animated" id="logo-title" href="/">	<img height="40" class="mr-2" src="/img/logo.png" alt="Face logo"> <img height="30" src="/img/explainable.png" alt="Face logo"> </a>
-		</div>
-			<div class="masthead-heading hidden" id="text-title"><h1>Explainable</h1></div>
-			<!-- Icon Divider -->
-		    <div class="divider-custom divider-light">
-		        <div class="divider-custom-line"></div>
-		        <div class="divider-custom-icon">
-		          <i class="fas fa-lightbulb"></i>
-		        </div>
-		        <div class="divider-custom-line"></div>
-		    </div>
-		    <div class="masthead-subheading"><h2>Demystifying Artificial Intelligence</h2></div>
-
-			<img class="" src="/img/undraw_chat_bot.svg" alt="Undraw Chatbot">
-      	</div>
+	<!-- Headet remains so that animation works. -->
+	<header class="header masthead text-center m-0 p-0">	
 	</header>
+
+	<section class="logo-section">
+		</div class="main-logo">
+			<img class="img-logo" id="main-logo" src="/pngs/logocover pic2.png" alt="Explainable">
+		</div>
+		</div class="under-logo">
+			<img class="img-logo" id="galcover" src="/pngs/wavy galcover pic2.png" alt="Lattice Image">
+		</div>
+	</section>
 
 	<!--section class="page-section container-fluid">
 		<div class="text-container">
@@ -73,11 +65,278 @@
 		</div>
 	</section-->
 
-	<section class="page-section container-fluid" id="image-section">
+	<section class="what-is-ai">
+		<div class="what-is-ai-text">
+			<h1 class="white-text"> What is AI? </h1>
+			<p class="white-text">Artificial Intelligence and Machine learning are ways we can use a computer to make a decision. Machine learning is a broad category in computing that contains many different strategies and approaches to decision-making. Specifically, machine learning algorithms allow computers to read large amounts of data and make decisions based on patterns in that data.</p>
+			<p class="white-text">Why would we use machine learning to make decisions? Humans are relatively good at making decisions. We make thousands and thousands of decisions a day. However, it is difficult for us to account for all information in unbiased ways. Human brains have a finite amount of active memory that can be used at a time to make a decision which means that we miss things. Sometimes big things. </p>
+		</div>
+	</section>
+
+	<section class="lets-dive-in">
+		</div class="lets-dive-in-text">
+			<h1 class="white-text">Let's dive in</h1>
+			<h6 class="red-text">... and start with the weather</h6>
+		</div>
+		<div class='row'>
+			<div class='column'>
+				<div class='dive-in-img'>
+					<img class="chugcover" id="chugcover" src="/pngs/chug_chugcover pic2.png" alt="Weather Image">
+				</div>
+			</div>
+			<div class='column'>
+				 <div class='dive-in-text'>
+					<p class="white-text">Machine learning algorithms aim to find patterns in large amounts of data. Say we wanted to predict whether it will rain in the next hour. The machine learning approach to guessing what will happen is to learn from past weather data. Let's assume that for the past year, we took a measurement every hour of the temperature, humidity, altitude and wind speed. Additionally, in each of these hours, we recorded whether or not it rained. A machine learning algorithm figures out how the measurements (temperature, humidity, altitude, and wind speed) are correlated with whether it rained in a given hour. For example, the algorithm may discover that when it is cold and the humidity is high, it is likely to rain, whereas hot and dry conditions did not yield rain as often. </p>
+					<p class="white-text">This example may seem as though a human could probably have figured it out without the help of a computer; in this case, that's probably true. The value of machine learning, however, comes from its ability to analyze more data faster than a human and draw conclusions based on more factors than a human could. For weather prediction, a computer might be able to look at more than just humidity and temperature and add global conditions, wind speeds and directions, pressure readings and many more conditions into its decision than a human could.</p>
+					<p class="white-text">Let's visualize the computer as the machine to the left; when we put some data into the top of the machine, it drops a prediction out of the bottom. What would go into the top would be the measurements of the current conditions: temperature, humidity, etc.. Within the machine, the data is read and the machine compares it against data it has already seen before. Finally, out of the bottom comes a prediction: whether or not it will rain. </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="boundary">
+		</div class="boundary-header">
+			<h4 class="red-text">The Decision Boundary</h6>
+		</div>
+		<div class='row'>
+			<div class='column'>
+				 <div class='boundary-text-1'>
+					<p class="white-text">The method by which the current conditions are compared to past data will depend on the algorithm being used. In many machine learning algorithms, the method of coming to a conclusion can be visualized through a decision boundary. A simple example decision boundary can be seen below:</p>
+					<p class="white-text">Here, we see a plot of humidity vs. temperature. In this figure, historical data is illustrated by dots: red dots represent hours when rain occurred and green dots represent hours where there was no rain. A machine learning algorithm then learns a 'boundary' between instances where it rained and instances where it did not rain. This boundary is illustrated by the yellow line seen above. </p>
+					<p class="white-text">Once this boundary is calculated, it can be used to predict whether it will rain during any given hour. Let's say I make a measurement right now: it is 80 degrees Farienheit and there is a 10% humidity. </p>
+					<p class="white-text">We see that these measurements will lie in the 'rainy' section: indicating that it is likely to rain. If we instead, however, measure a 80% humidity, we see that our instance transfers into the 'no rain' section of our graph. This makes sense intuitively, higher humidity indicates a higher likelihood of rain.</p>
+				</div>
+			</div>
+			<div class='column'>
+				<div class='decision-img-1'>
+					<img class="decision-linear" id="decision-linear" src="/pngs/decision_b_linearcover pic2.png" alt="Decision Boundary Image 1">
+				</div>
+			</div>
+		</div>
+
+		<div class='row'>
+			<div class='column'>
+				<div class='decision-img-2'>
+					<img class="decision-linear-2" id="decision-linear-2" src="/pngs/decision_b_neuralnetcover pic2.png" alt="Decision Boundary Image 1">
+				</div>
+			</div>
+			<div class='column'>
+				 <div class='boundary-text'>
+					<p class="white-text">Above, we see a fairly simple decision boundary: a straight line. However, we are often able to obtain better predictions using more complex decision boundaries. For instance here, we see that our boundary is able to better differentiate hours where it rained vs. those where it did not.</p>
+				 </div>
+			</div>
+		</div>
+
+		<div class='row'>
+			<div class='column'>
+				<div class='decision-img-3'>
+					<img class="decision-linear-2" id="decision-linear-3" src="/pngs/decision_b_treecover pic2.png" alt="Decision Boundary Image 1">
+				</div>
+			</div>
+			<div class='column'>
+				 <div class='boundary-text'>
+					<p class="white-text">Additionally, we may have more than one decision boundary; the important aspect is that we are able to separate our graph into, in this case, 'rain' sections and 'no rain' sections. </p>
+				 </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- switcher section -->
+	<section class="a-little-more">
+		<div class="a-little-more-text">
+			<h1 class="white-text">A little more</h1>
+		</div>
+		<!-- switcher -->
+		<div class='row'>
+			<div class='column'>
+				<div class='b-class-button button'>
+					<button class="button" id='b-class-button' type="button">Binary Classification</button>
+				</div>
+			</div>
+			<div class='column'>
+				 <div class='m-class-button'>
+					<button class="button" id='m-class-button' type="button">Multi-Class Classificiation</button>
+				 </div>
+			</div>
+			<div class='column'>
+				 <div class='regress-button button'>
+					<button class="button" id='regress-button' type="button">Regression</button>
+				 </div>
+			</div>
+		</div>
+		<!-- end switcher -->
+
+		<div class="a-little-more-static">
+			<p class="white-text">Above we asked a simple question - whether or not it will rain. In real world applications, however, we are often faced with more complex problems. Here, we see a few more types of questions that we are able to answer using machine learning. The overall structure of the machine seen above still stays the same, with data going in, and answers given based on the patterns identified within past data. </p>
+		</div>
+
+		<div class="b-class-content">
+			<div class='row'>
+				<div class='column'>
+					<div class='boundary-text-1'>
+						<p class="white-text">A binary classification problem categorizes data into a set of predetermined outcomes. For example, the question 'will it rain or will it not rain' is a classification problem because our set of predetermined outcomes are 'yes' or 'no'. Humans naturally solve classification problems like this all the time; for example, you might walk outside and think: 'There are dark clouds in the sky and it feels humid. Usually, when there are dark clouds in the sky and it feels humid, it rains. Therefore, it will likely rain.' Computers using classification algorithms make this exact same determination based on data coming to them from different sources using pressure, humidity and temperature sensors, often far more than a human could keep track of.</p>
+					</div>
+				</div>
+				<div class='column'>
+					<div class='decision-img-1'>
+						<img class="decision-linear" id="decision-linear" src="/pngs/decision_b_linearcover pic2.png" alt="Decision Boundary Image 1">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="m-class-content">
+			<div class='row'>
+				<div class='column'>
+					<div class='m-class-img-cont'>
+						<img class="m-class-img" id="m-class-img-1" src="/pngs/multi_class_treecover pic2.png" alt="Decision Boundary Image 1">
+					</div>
+					<div class="m-class-text-cont">
+						<p class="white-text">In a decision tree, decision boundaries can be set up manually. This means that although they can be easier to grasp and visualize, they are often a bit less accurate in their predictions. Their relative ease of implementation and explanation can make them appealing for implementation. </p>
+					</div>
+				</div>
+				<div class='column'>
+					<div class='m-class-img-cont'>
+						<img class="m-class-img" id="m-class-img-2" src="/pngs/multi_class_netcover pic2.png" alt="Decision Boundary Image 1">
+					</div>
+					<div class="m-class-text-cont">
+						<p class="white-text">A neural network is allowed to set up its own connections during training. Although it can sometimes be more difficult to determine the cause of decisions, the decisions can fall into a more tailored series of decision-boundaries that are set by the computer.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="regress-content">
+			<div class='row'>
+				<div class='column'>
+					<div class='boundary-text-1'>
+						<p class="white-text">A regression problem exists in situations where the prediction falls within a range instead of a specific category. In the weather example, a regression problem would be 'how much is it going to rain?' Here, we cannot create specific categories because it could rain any number of inches. So, given a certain temperature and humidity, the algorithm may predict that 'It will rain 6.34 inches', even if it has never rained exactly 6.34 inches before. The prediction can be more varied because specific categories don't exist.</p>
+					</div>
+				</div>
+				<div class='column'>
+					<div class='decision-img-1'>
+						<img class="decision-linear" id="decision-linear" src="/pngs/regressioncover pic2.png" alt="Decision Boundary Image 1">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="play-with-it">
+		<div class="play-with-it-text">
+			<h1 class="white-text">Play with it</h1>
+		</div>
+		<!-- switcher -->
+		<div class='row'>
+			<div class='column'>
+				<div class='classy-button button'>
+					<button class="button" id='classy-button' type="button">Classification</button>
+				</div>
+			</div>
+			<div class='column'>
+				 <div class='ip-button'>
+					<button class="button" id='ip-button' type="button">Image Processing</button>
+				 </div>
+			</div>
+			<div class='column'>
+				 <div class='regress-play-button button'>
+					<button class="button" id='regress-play-button' type="button">Regression</button>
+				 </div>
+			</div>
+		</div>
+		<!-- end switcher -->
+
+
+		<div class="classy-content white-text">
+			<div class="classy-content-text">
+				<p class="white-text">In this example we see a dataset regarding an individual's chances of surviving being aboard the Titanic. This algorithm was trained using data that documented different characteristics of a person on the ship and compares those characteristics to their rate of survival. This model is a binary classification problem, meaning that it has two distinct options for an individual: alive or dead.</p>
+				<p class="white-text">When playing with this model, observe the different effects on the prediction and how different categories can cause the prediction to change faster as they are changed. Some characteristics may be more influential than others.</p>
+				<h3 class="white-text classy-subheader">Predicting survival on the Titanic:</h3>
+			</div>
+
+			<div class="classy-sliders">
+				<div class='row'>
+					<div class='column'>
+						<div class='classy-img-cont'>
+							<img class="classy-img" id="classy-img" src="/pngs/bet_itsa_netcover pic2.png" alt="Decision Boundary Image 1">
+						</div>
+					</div>
+					<div class='column'>
+						<div class='classy-options'>
+							<div class="form-group">
+								<label class="m-0 p-0" for="PCLASS" width="50%">Class</label>
+								<select class="form-control w-75" id="PCLASS">
+									<option>1st</option>
+									<option>2nd</option>
+									<option>3rd</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label class="m-0 p-0" for="SPOUSES" width="50%">Siblings/Spouses Aboard</label>
+								<select class="form-control w-75" id="SPOUSES">
+									<option>0</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+
+							<div class="form-group my-2">
+						    		<label for="P-AGE">Age: </label>
+						    		<span class="font-weight-bold" id="P-AGE-value">50</span>
+						    		<input class="custom-range"  type="range" min="0" max="100" step="1" class="form-control w-75" id="P-AGE"></input>
+							</div>
+							<div class="form-group my-2">
+								<label for="FARE">Fare Paid: </label>
+								<span class="font-weight-bold" id="FARE-value">152</span>
+								<input class="custom-range"  type="range" min="5" max="299" step="0.01" class="form-control w-75" id="FARE"></input>
+							</div>
+
+							<div class="form-group">
+								<label class="m-0 p-0" for="SEX" width="50%">Sex</label>
+								<select class="form-control w-75" id="SEX">
+									<option>MALE</option>
+									<option>FEMALE</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label class="m-0 p-0" for="CHILDREN" width="50%">Parents/Children Aboard</label>
+								<select class="form-control w-75" id="CHILDREN">
+									<option>0</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-12 col-md-8 my-0 py-0 my-auto text-center"> 
+				<h4 id="decision-tree-prediction">Prediction: </h4>
+				<div class="drop-indicator text-center mx-auto" id="decision-tree-chart">		
+				</div>
+			</div> 
+		</div>
+
+
+
+		<div class="ip-content white-text">
 			
-		<div class="col-12 my-5">
-	    <div class="card border-left-info shadow h-100 py-2">
-		    <div class="card-body" id="image-dropzone">
+			<div class="ip-content-text">
+				<p class="white-text">This example is a multiclass classification problem where different images of handwritten numbers are classified by the number they correspond to. When the images are classified, it is possible to determine what pixels had more influence on the classification than others. On the heat-map, look for bright locations, which indicates that the pixels in that area had more of an influence on the algorithm than others. This can be used to determine where inconsistencies may be coming from in the algorithm by looking at what we would expect to matter on an image versus what does. </p>
+			</div>
+			
+
+
+			<div class="card-body" id="image-dropzone">
 		      	<h2>Image Processing</h2>
 		      	<div id="heatmap-selection" class="row">
 		      		<div class="col-6">
@@ -123,11 +382,108 @@
 				</div>
 		    </div>
 		</div>
-		
+
+
+
+		<div class="regress-play-content white-text">
+		      	<div class="row">
+					<div class='column-reg-1'>
+						<div class="form-group">
+							<label class="m-0 p-0" for="CHAS" width="50%">Bounds Charles River</label>
+							<select class="form-control w-50" id="CHAS">
+							  <option>YES</option>
+							  <option>NO</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label class="m-0 p-0" for="CRIM" width="50%">Per capita crime rate by town: </label> 
+							<span class="font-weight-bold" id="CRIM-value">50</span>
+							<input class="custom-range" type="range" min="0.0" max="100.0" step="0.01" class="form-control w-75" id="CRIM"></input>
+						</div>
+						<div class="form-group">
+							<label class="m-0 p-0" for="ZN" width="50%">Residential land in large lots: </label>
+							<span class="font-weight-bold" id="ZN-value">50</span>
+							<input class="custom-range"  type="range" min="0.0" max="100.0" step="0.01" class="form-control w-75" id="ZN"></input>
+						</div>
+						<div class="form-group">
+							<label class="m-0 p-0" for="AGE" width="50%">Proportion old owner-owned units: </label>
+							<span class="font-weight-bold" id="AGE-value">50</span>
+							<input class="custom-range"  type="range" min="0.0" max="100.0" step="0.01" class="form-control w-75" id="AGE"></input>
+						</div>
+						<div class="form-group">	
+							<label class="m-0 p-0" for="DIS" width="50%">Distances employment centers: </label>
+							<span class="font-weight-bold" id="DIS-value">7.5</span>
+							<input class="custom-range"  type="range" min="0.0" max="15.0" step="0.01" class="form-control w-75" id="DIS"></input>
+						</div>
+						<div class="form-group">
+							<label class="m-0 p-0" for="RAD" width="50%">Accessibility to radial highways: </label>
+							<span class="font-weight-bold" id="RAD-value">12.5</span>
+							<input class="custom-range"  type="range" min="0.0" max="25.0" step="0.01" class="form-control w-75" id="RAD"></input>
+						</div>
+						<div class="form-group">
+							<label class="m-0 p-0" for="TAX" width="50%">Full-value property-tax rate: </label>
+							<span class="font-weight-bold" id="TAX-value">500</span>
+							<input class="custom-range"  type="range" min="0.0" max="1000" step="0.01" class="form-control w-75" id="TAX"></input>
+						</div>
+						<div class="form-group">	
+							<label class="m-0 p-0" for="INDUS" width="50%">Non-retail business acres: </label>
+							<span class="font-weight-bold" id="INDUS-value">15</span>
+							<input class="custom-range"  type="range" min="0.0" max="30.0" step="0.01" class="form-control w-75" id="INDUS"></input>
+						</div>
+						<div class="form-group">
+							<label class="m-0 p-0" for="NOX" width="50%">Nitric oxides concentration: </label>
+							<span class="font-weight-bold" id="NOX-value">.5</span>
+							<input class="custom-range"  type="range" min="0.0" max="1.0" step="0.01" class="form-control w-75" id="NOX"></input>
+						</div>
+						<div class="form-group">
+							<label class="m-0 p-0" for="RM" width="50%">Average number of rooms: </label>
+							<span class="font-weight-bold" id="RM-value">5.0</span>
+							<input class="custom-range"  type="range" min="1.0" max="10.0" step="0.01" class="form-control w-75" id="RM"></input>
+						</div>
+						<div class="form-group">
+							
+							<label class="m-0 p-0" for="PTRATIO" width="50%">Pupil-teacher ratio by town: </label>
+							<span class="font-weight-bold" id="PTRATIO-value">12</span>
+							<input class="custom-range"  type="range" min="1" max="25.0" step="0.01" class="form-control w-75" id="PTRATIO"></input>
+						</div>
+						<div class="form-group">
+							<label class="m-0 p-0" for="B" width="50%">Proportion of black residents: </label>
+							<span class="font-weight-bold" id="B-value">250</span>
+							<input class="custom-range"  type="range" min="0.0" max="500.0" step="0.01" class="form-control w-75" id="B"></input>
+						</div>
+						<div class="form-group">
+							<label class="m-0 p-0" for="LSTAT" width="50%">Percent low income: </label>
+							<span class="font-weight-bold" id="LSTAT-value">25</span>
+							<input class="custom-range"  type="range" min="0.0" max="50" step="0.01" class="form-control w-75" id="LSTAT"></input>
+						</div>
+					</div>
+
+					<div class='column-reg-2'>
+						<div class='regress-play-cont'>
+							<div class="col-sm-12 my-0 py-0 text-center"> 
+								<h4 id="regression-prediction">Predicted House Price: </h4>
+							</div> 
+							<div class="text-center mx-auto" id="regression-bar-chart">		
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
 	</section>
 
-	<section class="page-section">
-	<h2 class='text-center pb-2'>Sample Inputs and Heatmaps</h2>
+
+
+
+	<div class="page-section container-fluid" id="image-section">	
+		<div class="col-12 my-5">
+	    <div class="card border-left-info shadow h-100 py-2">
+		    
+		</div>	
+	</div>
+
+
+	<div class="page-section">
+	<h2 class='text-center pb-2 white-text'>Sample Inputs and Heatmaps</h2>
 	
 	<div class="row text-center">
 		<div class="col-lg-1 col-md-1 col-1"></div>
@@ -183,9 +539,9 @@
 	          </a>
 	    </div>
 	</div>
-	</section>
+	</div>
 
-	<section class="page-section">
+	<div class="page-section">
 	<div class="row text-center">
 		<div class="col-lg-1 col-md-1 col-1"></div>	    
 	    <div class="col-lg-1 col-md-2 col-2">
@@ -239,229 +595,37 @@
 	          </a>
 	    </div>
 	</div>
-	</section>
+	</div>
 
-	<section class="page-section container-fluid" id="regression-section">
+	<div class="page-section container-fluid" id="regression-section">
 		<div class="col-12 my-5">
 	    <div class="card border-left-info shadow h-100 py-2">
 		    <div class="card-body" id="image-dropzone">
-		      	<h2>Regression</h2>
-		      	<div class="row">
-		      		<div class="col-12">
-						<div class="form-group">
-						    <label for="regression-model-selector" width="50%">Model Selector</label>
-						    <select class="form-control w-25" id="regression-model-selector">
-						      <option>Boston Housing Prices (Logistic Regression)</option>
-						      <option>EXAMPLE MODEL 2</option>
-						    </select>
-						 </div>
-						 <hr>
-		      		</div>
-
-		      		<div class="col-sm-3">
-						<div class="form-group">
-						    <label class="m-0 p-0" for="CHAS" width="50%">Bounds Charles River</label>
-						    <select class="form-control w-50" id="CHAS">
-						      <option>YES</option>
-						      <option>NO</option>
-						    </select>
-						</div>
-						<div class="form-group">
-						    <label class="m-0 p-0" for="CRIM" width="50%">Per capita crime rate by town: </label> 
-						    <span class="font-weight-bold" id="CRIM-value">50</span>
-						    <input class="custom-range" type="range" min="0.0" max="100.0" step="0.01" class="form-control w-75" id="CRIM"></input>
-						 </div>
-						 <div class="form-group">
-						    <label class="m-0 p-0" for="ZN" width="50%">Residential land in large lots: </label>
-						    <span class="font-weight-bold" id="ZN-value">50</span>
-						    <input class="custom-range"  type="range" min="0.0" max="100.0" step="0.01" class="form-control w-75" id="ZN"></input>
-						 </div>
-						 <div class="form-group">
-						    <label class="m-0 p-0" for="AGE" width="50%">Proportion old owner-owned units: </label>
-						    <span class="font-weight-bold" id="AGE-value">50</span>
-						    <input class="custom-range"  type="range" min="0.0" max="100.0" step="0.01" class="form-control w-75" id="AGE"></input>
-						 </div>
-					</div>
-
-					<div class="col-sm-3 select-offset">
-						<!--br><br><br-->
-						<div class="form-group">
-							
-						    <label class="m-0 p-0" for="DIS" width="50%">Distances employment centers: </label>
-						    <span class="font-weight-bold" id="DIS-value">7.5</span>
-						    <input class="custom-range"  type="range" min="0.0" max="15.0" step="0.01" class="form-control w-75" id="DIS"></input>
-						 </div>
-						 <div class="form-group">
-						    <label class="m-0 p-0" for="RAD" width="50%">Accessibility to radial highways: </label>
-						    <span class="font-weight-bold" id="RAD-value">12.5</span>
-						    <input class="custom-range"  type="range" min="0.0" max="25.0" step="0.01" class="form-control w-75" id="RAD"></input>
-						 </div>
-						 <div class="form-group">
-						    <label class="m-0 p-0" for="TAX" width="50%">Full-value property-tax rate: </label>
-						    <span class="font-weight-bold" id="TAX-value">500</span>
-						    <input class="custom-range"  type="range" min="0.0" max="1000" step="0.01" class="form-control w-75" id="TAX"></input>
-						 </div>
-					</div>
-
-					<div class="col-sm-3 select-offset">
-						<div class="form-group">
-							
-						    <label class="m-0 p-0" for="INDUS" width="50%">Non-retail business acres: </label>
-						    <span class="font-weight-bold" id="INDUS-value">15</span>
-						    <input class="custom-range"  type="range" min="0.0" max="30.0" step="0.01" class="form-control w-75" id="INDUS"></input>
-						 </div>
-						 <div class="form-group">
-						    <label class="m-0 p-0" for="NOX" width="50%">Nitric oxides concentration: </label>
-						    <span class="font-weight-bold" id="NOX-value">.5</span>
-						    <input class="custom-range"  type="range" min="0.0" max="1.0" step="0.01" class="form-control w-75" id="NOX"></input>
-						 </div>
-						 <div class="form-group">
-						    <label class="m-0 p-0" for="RM" width="50%">Average number of rooms: </label>
-						    <span class="font-weight-bold" id="RM-value">5.0</span>
-						    <input class="custom-range"  type="range" min="1.0" max="10.0" step="0.01" class="form-control w-75" id="RM"></input>
-						 </div>
-
-					</div>
-
-					<div class="col-sm-3 select-offset">
-						<div class="form-group">
-							
-						    <label class="m-0 p-0" for="PTRATIO" width="50%">Pupil-teacher ratio by town: </label>
-						    <span class="font-weight-bold" id="PTRATIO-value">12</span>
-						    <input class="custom-range"  type="range" min="1" max="25.0" step="0.01" class="form-control w-75" id="PTRATIO"></input>
-						 </div>
-						 <div class="form-group">
-						    <label class="m-0 p-0" for="B" width="50%">Proportion of black residents: </label>
-						    <span class="font-weight-bold" id="B-value">250</span>
-						    <input class="custom-range"  type="range" min="0.0" max="500.0" step="0.01" class="form-control w-75" id="B"></input>
-						 </div>
-						 <div class="form-group">
-						    <label class="m-0 p-0" for="LSTAT" width="50%">Percent low income: </label>
-						    <span class="font-weight-bold" id="LSTAT-value">25</span>
-						    <input class="custom-range"  type="range" min="0.0" max="50" step="0.01" class="form-control w-75" id="LSTAT"></input>
-						 </div>
-					</div>
-
-					<div class="col-sm-12 my-0 py-0 text-center"> 
-						<h4 id="regression-prediction">Predicted House Price: </h4>
-					</div> 
-					<div class="col-sm-12 col-md-5 text-center mx-auto" id="regression-bar-chart">		
-					</div>
-				</div>
+		      	
 		    </div>
 		</div>
-	</section>
-
-
-
-	<section class="page-section container-fluid" id="tree-section">
-		<div class="col-12 my-5">
-	    <div class="card border-left-info shadow h-100 py-2">
-		    <div class="card-body" id="image-dropzone">
-		      	<h2>Classification</h2>
-		      	<div class="row">
-		      		<div class="col-12">
-						<div class="form-group">
-						    <label for="regression-model-selector" width="50%">Model Selector</label>
-						    <select class="form-control w-25" id="regression-model-selector">
-						      <option>Titanic: Dead or Alive? (Decision Tree)</option>
-						      <option>EXAMPLE MODEL 2</option>
-						    </select>
-						 </div>
-						 <hr>
-		      		</div>
-
-		      		<div class="col-sm-6 col-md-2">
-						<div class="form-group">
-						    <label class="m-0 p-0" for="PCLASS" width="50%">Class</label>
-						    <select class="form-control w-75" id="PCLASS">
-						      <option>1st</option>
-						      <option>2nd</option>
-						      <option>3rd</option>
-						    </select>
-						</div>
-
-						<div class="form-group">
-						    <label class="m-0 p-0" for="SPOUSES" width="50%">Siblings/Spouses Aboard</label>
-						    <select class="form-control w-75" id="SPOUSES">
-						      <option>0</option>
-						      <option>1</option>
-						      <option>2</option>
-						      <option>3</option>
-						      <option>4</option>
-						      <option>5</option>
-						    </select>
-						</div>
-
-						<div class="form-group my-2">
-						    	<label for="P-AGE">Age: </label>
-						    	<span class="font-weight-bold" id="P-AGE-value">50</span>
-						    	<input class="custom-range"  type="range" min="0" max="100" step="1" class="form-control w-75" id="P-AGE"></input>
-						</div>
-						<div class="form-group my-2">
-						    <label for="FARE">Fare Paid: </label>
-						    <span class="font-weight-bold" id="FARE-value">152</span>
-						    <input class="custom-range"  type="range" min="5" max="299" step="0.01" class="form-control w-75" id="FARE"></input>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-md-2 mb-4">
-						<div class="form-group">
-						    <label class="m-0 p-0" for="SEX" width="50%">Sex</label>
-						    <select class="form-control w-75" id="SEX">
-						      <option>MALE</option>
-						      <option>FEMALE</option>
-						    </select>
-						</div>
-						<div class="form-group">
-						    <label class="m-0 p-0" for="CHILDREN" width="50%">Parents/Children Aboard</label>
-						    <select class="form-control w-75" id="CHILDREN">
-						      <option>0</option>
-						      <option>1</option>
-						      <option>2</option>
-						      <option>3</option>
-						      <option>4</option>
-						      <option>5</option>
-						    </select>
-						</div>
-					</div>
-
-
-					<div class="col-sm-12 col-md-8 my-0 py-0 my-auto text-center"> 
-						<h4 id="decision-tree-prediction">Prediction: </h4>
-						<div class="drop-indicator text-center mx-auto" id="decision-tree-chart">		
-						</div>
-					</div> 
-					
-				</div>
-		    </div>
-		</div>
-	</section>
-
-
-
-
+	</div>
 
 	<footer class="page-footer">
-	<hr class="mt-4">
+  		<div class="container">
+			<img class="footer-background" src="/pngs/bottom_navcover pic2.png" alt="Footer Graphic">
 
-  	<div class="container">
-	    <div class="row">
-	      <div class="col-lg-8 col-md-8 col-sm-12">
-	      <p>Explainable was started in Fall of 2019 at Tufts University.</p>
-	      <p>This is being completed for the Senior Capstone class.</p>
-	    </div>
-	    <div class="col-lg-4 col-md-4 col-sm-12">
-	      <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
-	      Sebastian Coates: sebastian.coates@tufts.edu
-	      <br>Aidan Fike: aidan.fike@tufts.edu
-	      <br>Logan Herodes: logan.herodes@tufts.edu
-	      <br>Mikayla Rose: mikayla.rose@tufts.edu
-	      <br>John Tagliaferro: john.tagliaferro@tufts.edu
-	      <br>Olivia Wentzell: olivia.wentzell@tufts.edu
-	    </div>
-	  </div>
-	</div>
+			<div class="row footer-text">
+			  <div class="col-lg-8 col-md-8 col-sm-12">
+			  <p>Explainable was started in Fall of 2019 at Tufts University.</p>
+			  <p>This is being completed for the Senior Capstone class.</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 footer-text">
+			  <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
+			  Sebastian Coates: sebastian.coates@tufts.edu
+			  <br>Aidan Fike: aidan.fike@tufts.edu
+			  <br>Logan Herodes: logan.herodes@tufts.edu
+			  <br>Mikayla Rose: mikayla.rose@tufts.edu
+			  <br>John Tagliaferro: john.tagliaferro@tufts.edu
+			  <br>Olivia Wentzell: olivia.wentzell@tufts.edu
+			</div>
+		  </div>
+		</div>
 	</footer>
 
 		<!-- <nav class="navbar sticky-top navbar-dark bg-dark">
