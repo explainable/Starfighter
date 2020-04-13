@@ -4,6 +4,9 @@ var lastTreePrediction = "Alive"
 var lastTreePredictionNode = "7"
 
 $(document).ready(function() {
+    $("#b-class-button").click();
+    $("#classy-button").click();
+
     $("#image-upload").submit(function(e) {
         e.preventDefault();
         
@@ -426,9 +429,85 @@ function render_decision_tree_plot(result, node) {
     Plotly.newPlot('decision-tree-chart', data, layout)
 }
 
+// A little more section switcher:
+$( "#b-class-button" ).click(function() {
+    // Switch colors
+    $("#b-class-button").css("color", "#F05A00");
+    $("#m-class-button").css("color", "#ffffff");
+    $("#regress-button").css("color", "#ffffff");
+
+    // Switch display
+    $(".b-class-content").show();
+    $(".m-class-content").hide();
+    $(".regress-content").hide();
+    
+});
+
+$( "#m-class-button" ).click(function() {
+    // Switch colors
+    $("#b-class-button").css("color", "#ffffff");
+    $("#m-class-button").css("color", "#F05A00");
+    $("#regress-button").css("color", "#ffffff");
+
+    // Switch display
+    $(".b-class-content").hide();
+    $(".m-class-content").show();
+    $(".regress-content").hide();
+
+});
+
+$( "#regress-button" ).click(function() {
+    // Switch colors
+    $("#b-class-button").css("color", "#ffffff");
+    $("#m-class-button").css("color", "#ffffff");
+    $("#regress-button").css("color", "#F05A00");
+
+    // Switch display
+    $(".b-class-content").hide();
+    $(".m-class-content").hide();
+    $(".regress-content").show();
+
+});
 
 
+// Play with it section switcher:
+$( "#classy-button" ).click(function() {
+    // Switch colors
+    $("#classy-button").css("color", "#F05A00");
+    $("#ip-button").css("color", "#ffffff");
+    $("#regress-play-button").css("color", "#ffffff");
 
+    // Switch display
+    $(".classy-content").show();
+    $(".ip-content").hide();
+    $(".regress-play-content").hide();
+    
+});
 
+$( "#ip-button" ).click(function() {
+    // Switch colors
+    $("#classy-button").css("color", "#ffffff");
+    $("#ip-button").css("color", "#F05A00");
+    $("#regress-play-button").css("color", "#ffffff");
+
+    // Switch display
+    $(".classy-content").hide();
+    $(".ip-content").show();
+    $(".regress-play-content").hide();
+
+});
+
+$( "#regress-play-button" ).click(function() {
+    // Switch colors
+    $("#classy-button").css("color", "#ffffff");
+    $("#ip-button").css("color", "#ffffff");
+    $("#regress-play-button").css("color", "#F05A00");
+
+    // Switch display
+    $(".classy-content").hide();
+    $(".ip-content").hide();
+    $(".regress-play-content").show();
+
+});
 
 
