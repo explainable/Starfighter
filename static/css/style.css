@@ -14,7 +14,6 @@ html, body {
 body {
   background: #161616;
   /* fonts */
-
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -89,7 +88,6 @@ body {
 
 .logo-section {
 	padding-top: 100px;
-	padding-left: 60px;
 }
 
 #main-logo {
@@ -97,6 +95,7 @@ body {
     width: auto; 
     max-width: 50%; 
     max-height: 50%;
+	padding-left: 60px;
 }
 
 #galcover {
@@ -131,7 +130,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	padding-top: 40px;
+	padding-top: 200px;
 }
 
 .row {
@@ -146,6 +145,14 @@ body {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+}
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  text-align: right;
 }
 
 .boundary {
@@ -258,8 +265,6 @@ body {
 
 .regress-play-content {
 	display: block;
-	padding-left: 60px;
-	padding-top: 60px;
 }
 
 .classy-subheader {
@@ -285,12 +290,12 @@ body {
 	flex-direction: column;
 	flex-basis: 50%;
 	flex: 3;
-	padding-left: 40px;
+	align-items: center;
+	padding-top: 200px;
 }
 
-.container {
-	position: relative;
-	text-align: center;
+.page-footer {
+	background-color: #2575A9;
 }
 
 .footer-background {
@@ -298,7 +303,28 @@ body {
 }
 
 .footer-text {
+	width: 50%;
+	font-size: 10px;
+}
 
+.desc {
+	left: 10px;
+}
+
+.contact {
+	right: 10px;
+}
+
+#decision-tree-chart {
+	color: #ffffff !important;
+}
+
+.about-image-section {
+	
+}
+
+.page-footer {
+	padding: 0;
 }
 
 .about-us {
@@ -309,17 +335,22 @@ body {
 
 .about-curtain {
 	width: 100%;
-	position: relative;
-	z-index: 1;
+
 }
 
-.about-gal {
-	width: 10%;
-	height: auto;
-	position: absolute;
-	z-index: 2;
-	left: 35%;
-	top: 60%;
+.about-text {
+	background-color: #c94354;
+	height: 80%;
+}
+
+.who-cares-title {
+	padding-left: 100px;
+	padding-bottom: 80px;
+}
+
+.who-cares-text {
+	padding-left: 100px;
+	padding-bottom: 100px;
 }
 
 .divider-custom {
@@ -372,11 +403,21 @@ body {
 }
 
 .page-footer {
-  color: #232323;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-top: 20px;
-  background: linear-gradient(to right, #dddddd, #ffffff);
+  color: #161616;
+  padding: 100px;
+}
+
+#footer {
+	height: auto;
+	width: auto;
+	max-width: 120%; 
+    max-height: 120%;
+}
+
+.footer-text {
+	position: absolute;
+	z-index: 2;
+	bottom: 10px;
 }
 
 .centered {

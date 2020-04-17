@@ -3,8 +3,10 @@
     "",
     "\\static",
     "\\static\\css",
-    "\\static\\html"
+    "\\static\\html",
+    "\\static\\js",
+    "\\static\\pngs"
   ],
-  "SelectedNode": "\\static\\html\\index.html",
+  "SelectedNode": "\\static\\js\\index.js",
   "PreviewInSolutionExplorer": false
 }
