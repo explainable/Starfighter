@@ -6,7 +6,9 @@ var lastTreePredictionNode = "7"
 $(document).ready(function() {
     $("#b-class-button").click();
     $("#classy-button").click();
-    $(".0-example").click();
+    
+    //$(".0-example").click();
+    show_heatmaps("/img/0.png", "/img/0_heatmap.png", "0") // instead of simulating click, just call directly
 
     $("#image-upload").submit(function(e) {
         e.preventDefault();

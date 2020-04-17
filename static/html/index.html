@@ -333,26 +333,7 @@
 			</div>
 			
 			<div class="row">
-				<div class="column">
-					<div class="row text-center hidden" id="heatmaps">  
-					<div class="col-12"> 
-					<h3 id="image-model-prediction">Model Prediction: </h3> <br>
-					</div>
-
-					<div class="col-sm-6"> 
-					<h4>Input Image</h4>
-					<img id="original-display" class="img-fluid img-thumbnail" width="50%" src="", alt="Generated Heatmap">
-					<p class="mt-1">This is the input image. The prediction indicates which type of image the model sees.</p>
-					</div>
-
-					<div class="col-sm-6"> 
-					<h4>Image Heatmap</h4>
-					<img id="heatmap-display" class="img-fluid img-thumbnail" width="50%" src="", alt="Generated Heatmap">
-					<p class="mt-1">This heatmap indicates which pixels in the image were most important when making the prediction.</p>
-					</div>
-				</div>
-				</div>
-				<div class="column">
+				<div class="row justify-content-center my-3">
 					<div class="col-lg-1 col-md-2 col-2">
 					  <a href="/img/0.png" target="_blank" class="d-block mb-4 h-100 0-example">
 							<img class="img-fluid img-thumbnail" id="0-example" src="/img/0.png" alt="Handwritten 0">
@@ -403,6 +384,25 @@
 							<img class="img-fluid img-thumbnail " id="9-example" src="/img/9.png" alt="Handwritten 9">
 						  </a>
 					</div>
+
+					<div class="row text-center hidden" id="heatmaps">  
+					<div class="col-12 mt-4 mb-0"> 
+					<h3 id="image-model-prediction ">Model Prediction: </h3> <br>
+					</div>
+
+					<div class="col-sm-6"> 
+					<h4>Input Image</h4>
+					<img id="original-display" class="img-fluid img-thumbnail" width="50%" src="", alt="Generated Heatmap">
+					<p class="mt-1">This is the input image. The prediction indicates which type of image the model sees.</p>
+					</div>
+
+					<div class="col-sm-6"> 
+					<h4>Image Heatmap</h4>
+					<img id="heatmap-display" class="img-fluid img-thumbnail" width="50%" src="", alt="Generated Heatmap">
+					<p class="mt-1">This heatmap indicates which pixels in the image were most important when making the prediction.</p>
+					</div>
+				</div>
+
 				</div>
 				</div> 
 
@@ -528,7 +528,7 @@
 		</div>
 	</section>
 
-	<footer class="page-footer">
+	<footer class="page-footer footer-gradient mb-3">
 			<div class="row white-text">
 			  <div class="column">
 				<p>Explainable was started in Fall of 2019 at Tufts University.</p>
