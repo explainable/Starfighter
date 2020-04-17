@@ -6,6 +6,7 @@ var lastTreePredictionNode = "7"
 $(document).ready(function() {
     $("#b-class-button").click();
     $("#classy-button").click();
+    $(".0-example").click();
 
     $("#image-upload").submit(function(e) {
         e.preventDefault();

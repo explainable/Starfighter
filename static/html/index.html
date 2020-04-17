@@ -24,7 +24,7 @@
 	<!-- NAVBAR -->
 	<nav class="navbar navbar-expand-md fixed-top">
 		<div class="hidden animated" id="navbar-logo-box">  
-	  <a class="navbar-brand hidden animated" id="navbar-logo" href="/">	<img height="40" class="mr-2" src="/img/logo.png" alt="Face logo"> <img height="30" src="/img/explainable.png" alt="Face logo"> </a> </div>
+	  <a class="navbar-brand hidden animated" id="navbar-logo" href="/">	<img height="40" class="mr-2" src="/pngs/logo_navbar.svg" alt="Face logo"> </a> </div>
 	  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -49,7 +49,7 @@
 			<img class="img-logo" id="main-logo" src="/pngs/logocover pic2.png" alt="Explainable">
 		</div>
 		</div class="under-logo">
-			<img class="img-logo" id="galcover" src="/pngs/wavy galcover pic2.png" alt="Lattice Image">
+			<img class="img-logo" id="galcover" src="/pngs/cropped_wavecover pic2.svg" alt="Lattice Image">
 		</div>
 	</section>
 
@@ -97,7 +97,7 @@
 		</div>
 		<div class='row'>
 			<div class='column'>
-				 <div class='boundary-text-1'>
+				 <div class='boundary-text'>
 					<p class="white-text">The method by which the current conditions are compared to past data will depend on the algorithm being used. In many machine learning algorithms, the method of coming to a conclusion can be visualized through a decision boundary. A simple example decision boundary can be seen below:</p>
 					<p class="white-text">Here, we see a plot of humidity vs. temperature. In this figure, historical data is illustrated by dots: red dots represent hours when rain occurred and green dots represent hours where there was no rain. A machine learning algorithm then learns a 'boundary' between instances where it rained and instances where it did not rain. This boundary is illustrated by the yellow line seen above. </p>
 					<p class="white-text">Once this boundary is calculated, it can be used to predict whether it will rain during any given hour. Let's say I make a measurement right now: it is 80 degrees Farienheit and there is a 10% humidity. </p>
@@ -316,9 +316,10 @@
 				</div>
 			</div>
 
-			<div class="col-sm-12 col-md-8 my-0 py-0 my-auto text-center"> 
+			<!-- Make white backgorund -->
+			<div class="col-sm-12 col-md-8 my-0 py-0 my-auto text-center white-text"> 
 				<h4 id="decision-tree-prediction">Prediction: </h4>
-				<div class="drop-indicator text-center mx-auto" id="decision-tree-chart">		
+				<div class="drop-indicator text-center mx-auto white-text;" id="decision-tree-chart">		
 				</div>
 			</div> 
 		</div>
@@ -528,25 +529,21 @@
 	</section>
 
 	<footer class="page-footer">
-  		<div class="container">
-			<img class="footer-background" src="/pngs/bottom_navcover pic2.png" alt="Footer Graphic">
-
-			<div class="row footer-text">
-			  <div class="col-lg-8 col-md-8 col-sm-12">
-			  <p>Explainable was started in Fall of 2019 at Tufts University.</p>
-			  <p>This is being completed for the Senior Capstone class.</p>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12 footer-text">
-			  <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
-			  Sebastian Coates: sebastian.coates@tufts.edu
-			  <br>Aidan Fike: aidan.fike@tufts.edu
-			  <br>Logan Herodes: logan.herodes@tufts.edu
-			  <br>Mikayla Rose: mikayla.rose@tufts.edu
-			  <br>John Tagliaferro: john.tagliaferro@tufts.edu
-			  <br>Olivia Wentzell: olivia.wentzell@tufts.edu
-			</div>
+			<div class="row white-text">
+			  <div class="column">
+				<p>Explainable was started in Fall of 2019 at Tufts University.</p>
+				<p>This is being completed for the Senior Capstone class.</p>
+			  </div>
+				<div class="column-right">
+				  <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
+				  <br>Sebastian Coates: sebastian.coates@tufts.edu
+				  <br>Aidan Fike: aidan.fike@tufts.edu
+				  <br>Logan Herodes: logan.herodes@tufts.edu
+				  <br>Mikayla Rose: mikayla.rose@tufts.edu
+				  <br>John Tagliaferro: john.tagliaferro@tufts.edu
+				  <br>Olivia Wentzell: olivia.wentzell@tufts.edu
+				</div>
 		  </div>
-		</div>
 	</footer>
 
 		<!-- <nav class="navbar sticky-top navbar-dark bg-dark">
