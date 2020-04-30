@@ -265,6 +265,8 @@ body {
 
 .regress-play-content {
 	display: block;
+	padding-left: 60px;
+	padding-top: 60px;
 }
 
 .classy-subheader {
